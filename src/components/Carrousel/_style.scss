@@ -1,0 +1,42 @@
+.carrousel {
+    display: flex;
+    align-items: center;
+    &__img {
+        border-radius: 25px;
+        width: 100%;
+        height: 415px;
+        object-fit: cover;
+        @include mobile-only {
+            height: 255px;
+            border-radius: 10px;
+        }
+    }
+    &__icon {
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+        color: darken($color-white, 10);
+        transition: color 0.5s ease-in-out;
+        @include mobile-only {
+            width: 40px;
+            height: 40px;
+        }
+        &.left {
+            position: absolute;
+            left: 100px;
+            @include mobile-only {
+                left: 25px;
+            }
+        }
+        &.right {
+            position: absolute;
+            right: 100px;
+            @include mobile-only {
+                right: 25px;
+            }
+        }
+        &:hover {
+            color: $color-white;
+        }
+    }
+}
