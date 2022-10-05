@@ -1,0 +1,19 @@
+.tag {
+    background-color: $color-primary;
+    border-radius: 10px;
+    padding: 3px 10px;
+    min-width: 95px;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    @include mobile-only {
+        padding: 3px 10px;
+        font-size: 12px;
+        border-radius: 5px;
+        min-width: 84px;
+    }
+}
