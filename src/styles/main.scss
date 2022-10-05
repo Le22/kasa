@@ -2,6 +2,7 @@
 @import "./base/base";
 
 @import "./utils/variables";
+@import "./utils/breakpoint";
 
 @import "../components/Header/style";
 @import "../components/Footer/style";
@@ -15,4 +16,5 @@
 
 @import "../pages/Home/style";
 @import "../pages/Logement/styles";
+@import "../pages/NoMatch/style";
 @import "../pages/APropos/style";
