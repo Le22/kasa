@@ -1,0 +1,20 @@
+.thumb {
+    min-height: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+    margin: 25px 30px;
+    display: flex;
+    align-items: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $color-primary;
+    @include mobile-only {
+        margin: 11px 0;
+    }
+    &__title {
+        margin: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        color: $color-white;
+    }
+}
