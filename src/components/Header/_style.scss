@@ -1,0 +1,38 @@
+.header {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    @include mobile-only {
+        margin-top: 20px;
+    }
+    &__img {
+        height: 68px;
+        @include mobile-only {
+            height: 47px;
+        }
+    }
+    &__nav {
+        &__link {
+            color: $color-primary;
+            font-size: 24px;
+            @include mobile-only {
+                font-size: 14px;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+            &:first-child {
+                margin-right: 57px;
+                @include mobile-only {
+                    margin-right: 12px;
+                }
+            }
+            &.currentHome,
+            &.currentAPropos {
+                text-decoration: underline;
+            }
+        }
+    }
+}
