@@ -1,0 +1,21 @@
+.apropos {
+    &__img {
+        width: 100%;
+        border-radius: 25px;
+        margin-top: 44px;
+        object-fit: cover;
+        height: 223px;
+        @include mobile-only {
+            margin-top: 17px;
+            border-radius: 10px;
+        }
+    }
+    &__section {
+        display: flex;
+        flex-direction: column;
+        margin: 33px 100px;
+        @include mobile-only {
+            margin: 19px 0;
+        }
+    }
+}
