@@ -1,0 +1,21 @@
+.rating {
+    margin-top: 20px;
+    &__star {
+        margin-left: 15px;
+        height: 25px;
+        width: 25px;
+        color: $color-grey;
+        @include mobile-only {
+            margin-left: 0;
+            margin-right: 2px;
+            height: 20px;
+            width: 20px;
+        }
+        &--complete {
+            color: $color-primary;
+        }
+    }
+    @include mobile-only {
+        margin-top: 0;
+    }
+}
