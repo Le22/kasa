@@ -7,6 +7,7 @@ function Carrousel(props) {
 
     let left // chevron left
     let right // chevron right
+    let numberImg // nombre img
 
     // useState pour changment des img
     const [url, changeUrl] = useState(link[0])
@@ -24,6 +25,11 @@ function Carrousel(props) {
                 className="carrousel__icon right"
                 onClick={() => nextImg()}
             />
+        )
+        numberImg = (
+            <p className="carrousel__numberimg">
+                {link.indexOf(url) + 1}/{link.length}
+            </p>
         )
     }
 
@@ -50,11 +56,14 @@ function Carrousel(props) {
     }
 
     return (
-        <div className="carrousel">
-            {left}
-            <img className="carrousel__img" src={url} alt={title} />
-            {right}
-        </div>
+        <>
+            <div className="carrousel">
+                {left}
+                <img className="carrousel__img" src={url} alt={title} />
+                {right}
+            </div>
+            {numberImg}
+        </>
     )
 }
 

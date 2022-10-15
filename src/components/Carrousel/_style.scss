@@ -39,4 +39,15 @@
             color: $color-white;
         }
     }
+    &__numberimg {
+        text-align: center;
+        color: $color-white;
+        position: relative;
+        top: -50px;
+        font-size: 18px;
+        margin: 0;
+        @include mobile-only {
+            display: none;
+        }
+    }
 }
